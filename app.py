@@ -14,6 +14,6 @@ class GetUserInfo(Resource):
 		json = data.json()
 		return json
 
-api.add_resource(GetUserInfo, "<string:userid>")
+api.add_resource(GetUserInfo, "/id/<string:userid>")
 if __name__ == "__main__":
 	app.run()
