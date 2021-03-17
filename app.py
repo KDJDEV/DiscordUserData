@@ -10,7 +10,7 @@ api = Api(app)
 
 class GetUserInfo(Resource):
 	def get(self, userid):
-		data = requests.get(f"https://discord.com/api/v8/users/{userid}/profile", headers={"authorization":token)
+		data = requests.get(f"https://discord.com/api/v8/users/{userid}/profile", headers={"authorization":token})
 		json = data.json()
 		return json
 
